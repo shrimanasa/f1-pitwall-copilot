@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PitWall Core: Human Threat Intelligence for F1
 
-## Getting Started
+## The Problem: The Human Element
+F1 strategy isn't lost to bad data; it's lost to bad signals. In a sport where 3 seconds decides a race, the most dangerous thing on the track isn't the competitor's car—it's the human calling their strategy. 
 
-First, run the development server:
+Drivers misreport tire conditions under pressure. Rival teams deliberately feed false information over open radio channels to manipulate your pit calls. Opposing strategists have decision patterns that repeat across every race—predictable, exploitable, and completely unmodeled by traditional tools.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Today's strategy tools analyze the *car*. Nobody is analyzing the *people*.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Our AI/Technical Approach
+**PitWall Core** is a Next.js-based Human Threat Intelligence dashboard that uses IBM AI technologies to profile and exploit opposing strategists and drivers.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **IBM Granite (Behavioral Exploit Engine)**: Analyzes real-time radio communications and cross-references them with deterministic telemetry. It detects "Signal Mismatches" (e.g., when a driver claims their tires are dead, but telemetry shows optimum grip) to flag deliberate disinformation and radio bluffs.
+- **IBM Docling (Knowledge Grounding)**: Ingests years of historical race data, team radio transcripts, and strategist decisions into a RAG pipeline. It builds a "Strategist Fingerprint"—a psychological profile of opposing race engineers (like Gianpiero Lambiase) to predict their next strategic move based on historical tendencies.
+- **Next.js & Tailwind CSS**: A hyper-dense, grid-based "Command Terminal" UI that breaks the traditional SaaS dashboard paradigm, delivering information exactly how a trackside engineer needs it.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Why This Matters in Racing
+By shifting the focus from vehicle telemetry to human behavioral modeling, teams can stop falling for radio bluffs and dummy pit crew deployments. PitWall Core turns the opposing team's psychological warfare against them, transforming human unpredictability into a deterministic, exploitable metric.
 
-## Learn More
+## Running the Prototype
+1. Clone the repository.
+2. Run `npm install`
+3. Run `npm run dev`
+4. Open `http://localhost:3000` to view the live Human Threat Intel terminal.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*(Note: The current prototype uses mocked IBM API endpoints to demonstrate the UI and behavioral exploit logic in a predictable environment for judging).*

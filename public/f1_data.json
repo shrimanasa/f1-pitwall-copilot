@@ -1,0 +1,13 @@
+{
+  "session": {
+    "year": 2024,
+    "race": "Monaco Grand Prix",
+    "circuit": "Circuit de Monaco",
+    "total_laps": 78,
+    "generated_at": "2026-05-23T18:42:07.467273"
+  },
+  "drivers": {},
+  "pit_stops": [],
+  "lap_data": [],
+  "radio_intercepts": []
+}
