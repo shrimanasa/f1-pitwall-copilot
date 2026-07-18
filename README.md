@@ -7,7 +7,7 @@ Drivers misreport tire conditions under pressure. Rival teams deliberately feed 
 
 Today's strategy tools analyze the *car*. Nobody is analyzing the *people*.
 
-## Our AI/Technical Approach
+## AI/Technical Approach
 **PitWall Core** is a Next.js-based Human Threat Intelligence dashboard that uses IBM AI technologies to profile and exploit opposing strategists and drivers.
 
 - **IBM Granite (Behavioral Exploit Engine)**: Analyzes real-time radio communications and cross-references them with deterministic telemetry. It detects "Signal Mismatches" (e.g., when a driver claims their tires are dead, but telemetry shows optimum grip) to flag deliberate disinformation and radio bluffs.
